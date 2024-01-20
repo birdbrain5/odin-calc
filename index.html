@@ -11,20 +11,20 @@
     <div id="calcBox">
         <div id="display"></div>
         <div class="calcBtn" onclick="clearDisplay(), resetCalc()">C</div>
-        <div class="calcBtn" onclick="displayInput('1')">1</div>
-        <div class="calcBtn" onclick="displayInput('2')">2</div>
-        <div class="calcBtn" onclick="displayInput('3')">3</div>
-        <div class="calcBtn" onclick="displayInput('4')">4</div>
-        <div class="calcBtn" onclick="displayInput('5')">5</div>
-        <div class="calcBtn" onclick="displayInput('6')">6</div>
-        <div class="calcBtn" onclick="displayInput('7')">7</div>
-        <div class="calcBtn" onclick="displayInput('8')">8</div>
-        <div class="calcBtn" onclick="displayInput('9')">9</div>
-        <div class="calcBtn" onclick="displayInput('0')">0</div>
-        <div class="calcBtn" id="add" onclick="displayInput('+')">+</div>
-        <div class="calcBtn" id="subract" onclick="displayInput('-')">-</div>
-        <div class="calcBtn" id="multiply" onclick="displayInput('*')">*</div>
-        <div class="calcBtn" id="divide" onclick="displayInput('/')">/</div>
+        <div class="calcBtn" onclick="displayInput('1'), logNumbers('1')">1</div>
+        <div class="calcBtn" onclick="displayInput('2'), logNumbers('2')">2</div>
+        <div class="calcBtn" onclick="displayInput('3'), logNumbers('3')">3</div>
+        <div class="calcBtn" onclick="displayInput('4'), logNumbers('4')">4</div>
+        <div class="calcBtn" onclick="displayInput('5'), logNumbers('5')">5</div>
+        <div class="calcBtn" onclick="displayInput('6'), logNumbers('6')">6</div>
+        <div class="calcBtn" onclick="displayInput('7'), logNumbers('7')">7</div>
+        <div class="calcBtn" onclick="displayInput('8'), logNumbers('8')">8</div>
+        <div class="calcBtn" onclick="displayInput('9'), logNumbers('9')">9</div>
+        <div class="calcBtn" onclick="displayInput('0'), logNumbers('0')">0</div>
+        <div class="calcBtn" id="add" onclick="displayInput('+'), logOperators('+')">+</div>
+        <div class="calcBtn" id="subract" onclick="displayInput('-'), logOperators('-')">-</div>
+        <div class="calcBtn" id="multiply" onclick="displayInput('*'), logOperators('*')">*</div>
+        <div class="calcBtn" id="divide" onclick="displayInput('/'), logOperators('/')">/</div>
         <div class="calcBtn" id="equals" onclick="operate()">=</div>
     </div>
 </body>

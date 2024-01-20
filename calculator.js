@@ -22,16 +22,17 @@ function divide(x,y){
 function displayInput(x){
 
     document.getElementById('display').innerHTML += x
+}
 
-    if (x == '1' || x == '2' || x == '3' || x == '4' || x == '5' || x == '6' || x == '7' || x == '8' || x == '9' || x == '0'){
-        numbers[i] += x
-        console.log(numbers)
-    }
-    else{
-        operators[i] = x
-        numbers[i+1] = ''
-        i++
-    }
+function logNumbers(x){
+    numbers[i] += x
+    console.log(numbers)
+}
+
+function logOperators(x){
+    operators[i] = x
+    numbers[i+1] = ''
+    i++
 }
 
 function clearDisplay(){
